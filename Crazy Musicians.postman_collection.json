@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "ee8dfcb6-6d2f-42e4-9d48-c275b2d03c41",
+		"name": "Crazy Musicians",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47108041",
+		"_collection_link": "https://altimetry-saganist-93056574-6299550.postman.co/workspace/c95ca5c1-2e6e-4647-8fe2-c8d147bf16c8/collection/47108041-ee8dfcb6-6d2f-42e4-9d48-c275b2d03c41?action=share&source=collection_link&creator=47108041"
+	},
+	"item": [
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/api/musicians",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"musicians"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/api/musicians/11",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"musicians",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/api/musicians/search?name=ah&profession=Famous Instrumentalist",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"musicians",
+						"search"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "ah"
+						},
+						{
+							"key": "profession",
+							"value": "Famous Instrumentalist"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\":\"Ceku\",\r\n    \"Profession\":\"Singer\",\r\n    \"FunFact\":\"Cannot resist piece of delicious watermelon\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/musicians",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"musicians"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\"Cannot resist piece of cucumber\"",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/musicians/11/funfact",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"musicians",
+						"11",
+						"funfact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\":\"Ceku\",\r\n    \"Profession\":\"Singer\",\r\n    \"FunFact\":\"Cannot resist piece of delicious watermelon\"\r\n}"
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/musicians/11",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"musicians",
+						"11"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "https://localhost:7197",
+			"type": "default"
+		}
+	]
+}

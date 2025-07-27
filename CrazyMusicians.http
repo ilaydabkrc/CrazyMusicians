@@ -1,0 +1,6 @@
+@CrazyMusicians_HostAddress = http://localhost:5231
+
+GET {{CrazyMusicians_HostAddress}}/
+Accept: application/json
+
+###
