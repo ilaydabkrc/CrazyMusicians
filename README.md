@@ -17,11 +17,6 @@ A simple ASP.NET Core Web API for managing a list of funny and crazy musicians!
 - `PATCH /api/musicians/{id}/funfact` - Update only the fun fact
 - `DELETE /api/musicians/{id}` - Delete a musician
 
-## How to Run
-1. Open the solution in Visual Studio 2022+ (with .NET 9 support).
-2. Build and run the project.
-3. Use Swagger UI or any HTTP client to test the endpoints.
-
 ## Example Data
 The API starts with 10 crazy musicians, each with a unique profession and fun fact.
 
